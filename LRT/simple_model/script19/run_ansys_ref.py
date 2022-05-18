@@ -3,10 +3,10 @@ ScriptEnv.Initialize("Ansoft.ElectronicsDesktop")
 oDesktop.RestoreWindow()
 
 # Open aedt file
-oDesktop.OpenProject("Z:/git/ML_WPT_coil/LRT/simple_model/script199/ML_aedt/ML199.aedt")
+oDesktop.OpenProject("Z:/git/ML_WPT_coil/LRT/simple_model/script19/ML_aedt/ML19.aedt")
 
 # Make project
-oProject = oDesktop.SetActiveProject("ML199")
+oProject = oDesktop.SetActiveProject("ML19")
 oProject.InsertDesign("Maxwell", "Maxwell_ML_v$VERSION_IDX_STR", "EddyCurrent", "")
 oDesign = oProject.SetActiveDesign("Maxwell_ML_v$VERSION_IDX_STR")
 
@@ -1462,7 +1462,7 @@ oModule.CreateReport("L Table 1", "EddyCurrent", "Data Table", "Setup1 : LastAda
 		"X Component:="		, "Freq",
 		"Y Component:="		, ["Matrix1.L(Tx,Tx)","Matrix1.L(Rx1,Rx1)","Matrix1.L(Rx2,Rx2)"]
 	])
-oModule.ExportToFile("L Table 1", "Z:/git/ML_WPT_coil/LRT/simple_model/script199/ML_data/inductance$VERSION_IDX_STR.csv", False)
+oModule.ExportToFile("L Table 1", "Z:/git/ML_WPT_coil/LRT/simple_model/script19/ML_data/inductance$VERSION_IDX_STR.csv", False)
 
 
 
@@ -1476,7 +1476,7 @@ oModule.CreateReport("Coupling Coeff Table 1", "EddyCurrent", "Data Table", "Set
 		"X Component:="		, "Freq",
 		"Y Component:="		, ["Matrix1.CplCoef(Tx,Rx1)","Matrix1.CplCoef(Tx,Rx2)","Matrix1.CplCoef(Rx1,Rx2)"]
 	])
-oModule.ExportToFile("Coupling Coeff Table 1", "Z:/git/ML_WPT_coil/LRT/simple_model/script199/ML_data/coupling$VERSION_IDX_STR.csv", False)
+oModule.ExportToFile("Coupling Coeff Table 1", "Z:/git/ML_WPT_coil/LRT/simple_model/script19/ML_data/coupling$VERSION_IDX_STR.csv", False)
 
 oModule.CreateReport("Calculator Expressions Table 1", "Fields", "Data Table", "Setup1 : LastAdaptive", [], 
 	[
@@ -1489,4 +1489,4 @@ oModule.CreateReport("Calculator Expressions Table 1", "Fields", "Data Table", "
 		"X Component:="		, "Freq",
 		"Y Component:="		, ["Tx_loss","Rx1_loss","Rx2_loss"]
 	])
-oModule.ExportToFile("Calculator Expressions Table 1", "Z:/git/ML_WPT_coil/LRT/simple_model/script199/ML_data/loss$VERSION_IDX_STR.csv", False)
+oModule.ExportToFile("Calculator Expressions Table 1", "Z:/git/ML_WPT_coil/LRT/simple_model/script19/ML_data/loss$VERSION_IDX_STR.csv", False)

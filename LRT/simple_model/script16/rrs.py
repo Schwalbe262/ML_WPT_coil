@@ -160,14 +160,14 @@ for i in range(0, 10000):
 
     try :
         try:
-            os.remove(f'.\ML_aedt\ML166.aedt.lock')
+            os.remove(f'.\ML_aedt\ML16.aedt.lock')
         except:
             time.sleep(1)
-        if os.path.isfile(f'.\ML_aedt\ML166.aedt') :
-            os.remove(f'.\ML_aedt\ML166.aedt')
+        if os.path.isfile(f'.\ML_aedt\ML16.aedt') :
+            os.remove(f'.\ML_aedt\ML16.aedt')
         time.sleep(1)	
 
-        shutil.copy(f'.\ML_aedt\ML_ref.aedt',f'.\ML_aedt\ML166.aedt')
+        shutil.copy(f'.\ML_aedt\ML_ref.aedt',f'.\ML_aedt\ML16.aedt')
         time.sleep(1)
 
         try:
@@ -176,13 +176,13 @@ for i in range(0, 10000):
             print(f'error number {i}')
             print(e)
 
-        if os.path.isfile(f'.\ML_aedt\ML166.aedt') :
-            os.remove(f'.\ML_aedt\ML166.aedt')
+        if os.path.isfile(f'.\ML_aedt\ML16.aedt') :
+            os.remove(f'.\ML_aedt\ML16.aedt')
         time.sleep(1)	
 
-        shutil.rmtree(f'.\ML_aedt\ML166.aedtresults')
+        shutil.rmtree(f'.\ML_aedt\ML16.aedtresults')
         try:
-            os.remove(f'.\ML_aedt\ML166.aedt.lock')
+            os.remove(f'.\ML_aedt\ML16.aedt.lock')
         except:
             time.sleep(1)
     except :
