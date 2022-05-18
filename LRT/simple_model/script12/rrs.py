@@ -23,7 +23,7 @@ def random_choice(X) :
 def run_simul(version_idx_str):
     #0 Initialize random variables
 
-    move_range = [0.05, 0.4, 0.025, 3] # under, upper, resolution, 소수점자리수
+    move_range = [0.05, 0.4, 0.025, 3] # under, upper, resolution
     width0_range = [400, 1000, 25, 0]
     width1_range = [250, 1000, 25, 0]
 
@@ -160,14 +160,14 @@ for i in range(0, 10000):
 
     try :
         try:
-            os.remove(f'.\ML_aedt\ML12.aedt.lock')
+            os.remove(f'.\ML_aedt\ML122.aedt.lock')
         except:
             time.sleep(1)
-        if os.path.isfile(f'.\ML_aedt\ML12.aedt') :
-            os.remove(f'.\ML_aedt\ML12.aedt')
+        if os.path.isfile(f'.\ML_aedt\ML122.aedt') :
+            os.remove(f'.\ML_aedt\ML122.aedt')
         time.sleep(1)	
 
-        shutil.copy(f'.\ML_aedt\ML_ref.aedt',f'.\ML_aedt\ML12.aedt')
+        shutil.copy(f'.\ML_aedt\ML_ref.aedt',f'.\ML_aedt\ML122.aedt')
         time.sleep(1)
 
         try:
@@ -176,13 +176,13 @@ for i in range(0, 10000):
             print(f'error number {i}')
             print(e)
 
-        if os.path.isfile(f'.\ML_aedt\ML12.aedt') :
-            os.remove(f'.\ML_aedt\ML12.aedt')
+        if os.path.isfile(f'.\ML_aedt\ML122.aedt') :
+            os.remove(f'.\ML_aedt\ML122.aedt')
         time.sleep(1)	
 
-        shutil.rmtree(f'.\ML_aedt\ML12.aedtresults')
+        shutil.rmtree(f'.\ML_aedt\ML122.aedtresults')
         try:
-            os.remove(f'.\ML_aedt\ML12.aedt.lock')
+            os.remove(f'.\ML_aedt\ML122.aedt.lock')
         except:
             time.sleep(1)
     except :

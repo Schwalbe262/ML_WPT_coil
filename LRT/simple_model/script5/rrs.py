@@ -23,7 +23,7 @@ def random_choice(X) :
 def run_simul(version_idx_str):
     #0 Initialize random variables
 
-    move_range = [0.05, 0.4, 0.025, 3] # under, upper, resolution, 소수점자리수
+    move_range = [0.05, 0.4, 0.025, 3] # under, upper, resolution
     width0_range = [400, 1000, 25, 0]
     width1_range = [250, 1000, 25, 0]
 
