@@ -118,11 +118,11 @@ def run_simul(version_idx_str):
         time.sleep(1)
 
 
-    temp1 = pd.read_csv(f'.\ML_data\inductance{version_idx_str}.csv', sep=",")
+    temp1 = pd.read_csv(f'.\ML_data\inductance{version_idx_str}_dat.csv', sep=",")
     temp1 = temp1.to_numpy()
-    temp2 = pd.read_csv(f'.\ML_data\coupling{version_idx_str}.csv', sep=",")
+    temp2 = pd.read_csv(f'.\ML_data\coupling{version_idx_str}_dat.csv', sep=",")
     temp2 = temp2.to_numpy()
-    temp3 = pd.read_csv(f'.\ML_data\loss{version_idx_str}.csv', sep=",")
+    temp3 = pd.read_csv(f'.\ML_data\loss{version_idx_str}_dat.csv', sep=",")
     temp3 = temp3.to_numpy()
 
     parameter = np.array([width0,width1,height0,height1,move,coil0_width,coil1_width,gap0,gap1])

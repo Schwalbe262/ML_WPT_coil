@@ -1462,7 +1462,7 @@ oModule.CreateReport("L Table 1", "EddyCurrent", "Data Table", "Setup1 : LastAda
 		"X Component:="		, "Freq",
 		"Y Component:="		, ["Matrix1.L(Tx,Tx)","Matrix1.L(Rx1,Rx1)","Matrix1.L(Rx2,Rx2)"]
 	])
-oModule.ExportToFile("L Table 1", "Z:/git/ML_WPT_coil/LRT/simple_model_pass10/script82/ML_data/inductance$VERSION_IDX_STR.csv", False)
+oModule.ExportToFile("L Table 1", "Z:/git/ML_WPT_coil/LRT/simple_model_pass10/script82/ML_data/inductance$VERSION_IDX_STR_dat.csv", False)
 
 
 
@@ -1476,7 +1476,7 @@ oModule.CreateReport("Coupling Coeff Table 1", "EddyCurrent", "Data Table", "Set
 		"X Component:="		, "Freq",
 		"Y Component:="		, ["Matrix1.CplCoef(Tx,Rx1)","Matrix1.CplCoef(Tx,Rx2)","Matrix1.CplCoef(Rx1,Rx2)"]
 	])
-oModule.ExportToFile("Coupling Coeff Table 1", "Z:/git/ML_WPT_coil/LRT/simple_model_pass10/script82/ML_data/coupling$VERSION_IDX_STR.csv", False)
+oModule.ExportToFile("Coupling Coeff Table 1", "Z:/git/ML_WPT_coil/LRT/simple_model_pass10/script82/ML_data/coupling$VERSION_IDX_STR_dat.csv", False)
 
 oModule.CreateReport("Calculator Expressions Table 1", "Fields", "Data Table", "Setup1 : LastAdaptive", [], 
 	[
@@ -1489,4 +1489,4 @@ oModule.CreateReport("Calculator Expressions Table 1", "Fields", "Data Table", "
 		"X Component:="		, "Freq",
 		"Y Component:="		, ["Tx_loss","Rx1_loss","Rx2_loss"]
 	])
-oModule.ExportToFile("Calculator Expressions Table 1", "Z:/git/ML_WPT_coil/LRT/simple_model_pass10/script82/ML_data/loss$VERSION_IDX_STR.csv", False)
+oModule.ExportToFile("Calculator Expressions Table 1", "Z:/git/ML_WPT_coil/LRT/simple_model_pass10/script82/ML_data/loss$VERSION_IDX_STR_dat.csv", False)
