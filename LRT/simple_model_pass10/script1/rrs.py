@@ -16,6 +16,8 @@ import shutil
 																																																
 
 REFERENCE_SCRIPT_FILE_NAME = f'run_ansys_ref.py'
+f = open("../computer_name.txt", 'r')
+COMPUTER_NAME = f.readline()
 
 def random_choice(X) :
     return round(np.random.choice( np.arange( X[0] , X[1]+X[2] , X[2]) ),X[3])
@@ -137,17 +139,17 @@ def run_simul(version_idx_str):
     print(temp3)
 
 
-    data1 = np.loadtxt(f'Z:\Autosimul_data\LRT\simple_model_pass10\inductance.csv', delimiter=",")
+    data1 = np.loadtxt(f'Z:\Autosimul_data\LRT\simple_model_pass10\{COMPUTER_NAME}\script1\inductance.csv', delimiter=",")
     new_data1 = np.vstack((data1, temp1))
-    np.savetxt(f'Z:\Autosimul_data\LRT\simple_model_pass10\inductance.csv',new_data1,delimiter=",")
+    np.savetxt(f'Z:\Autosimul_data\LRT\simple_model_pass10\{COMPUTER_NAME}\script1\inductance.csv',new_data1,delimiter=",")
 
-    data2 = np.loadtxt(f'Z:\Autosimul_data\LRT\simple_model_pass10\coupling.csv', delimiter=",")
+    data2 = np.loadtxt(f'Z:\Autosimul_data\LRT\simple_model_pass10\{COMPUTER_NAME}\script1\coupling.csv', delimiter=",")
     new_data2 = np.vstack((data2, temp2))
-    np.savetxt(f'Z:\Autosimul_data\LRT\simple_model_pass10\coupling.csv',new_data2,delimiter=",")
+    np.savetxt(f'Z:\Autosimul_data\LRT\simple_model_pass10\{COMPUTER_NAME}\script1\coupling.csv',new_data2,delimiter=",")
 
-    data3 = np.loadtxt(f'Z:\Autosimul_data\LRT\simple_model_pass10\loss.csv', delimiter=",")
+    data3 = np.loadtxt(f'Z:\Autosimul_data\LRT\simple_model_pass10\{COMPUTER_NAME}\script1\loss.csv', delimiter=",")
     new_data3 = np.vstack((data3, temp3))
-    np.savetxt(f'Z:\Autosimul_data\LRT\simple_model_pass10\loss.csv',new_data3,delimiter=",")
+    np.savetxt(f'Z:\Autosimul_data\LRT\simple_model_pass10\{COMPUTER_NAME}\script1\loss.csv',new_data3,delimiter=",")
 
 
 
