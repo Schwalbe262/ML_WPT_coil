@@ -308,11 +308,11 @@ oEditor = oDesign.SetActiveEditor("3D Modeler")
 oEditor.CreateBox(
 	[
 		"NAME:BoxParameters",
-		"XPosition:="		, "-(width[0]+width[1])/2",
-		"YPosition:="		, "-(height[0]+height[1])",
+		"XPosition:="		, "-(width[0]+width[1])",
+		"YPosition:="		, "-(height[0]+height[1])/2",
 		"ZPosition:="		, "-150mm-air_gap/2",
-		"XSize:="		, "(width[0]+width[1])",
-		"YSize:="		, "(height[0]+height[1])*2",
+		"XSize:="		, "(width[0]+width[1])*2",
+		"YSize:="		, "(height[0]+height[1])",
 		"ZSize:="		, "300mm+air_gap"
 	], 
 	[
@@ -547,7 +547,7 @@ oEditor.CreatePolyline(
 			[
 				"NAME:PLPoint",
 				"X:="			, "-1/2*width[0]",
-				"Y:="			, "0.5*(height[0]+height[1])",
+				"Y:="			, "(height[0]+height[1])/2",
 				"Z:="			, "0mm"
 			],
 			[
@@ -713,7 +713,7 @@ oEditor.CreatePolyline(
 			[
 				"NAME:PLPoint",
 				"X:="			, "-1/2*width[0]+2*(gap[0]+coil_width[0])",
-				"Y:="			, "1/2*(height[0]+height[1])",
+				"Y:="			, "(height[0]+height[1])/2",
 				"Z:="			, "0mm"
 			]
 		],
@@ -1239,7 +1239,7 @@ oEditor.CreateRegularPolygon(
 		"NAME:RegularPolygonParameters",
 		"IsCovered:="		, True,
 		"XCenter:="		, "1/2*width[1]-width[0]*move[0]",
-		"YCenter:="		, "-(height[0]+height[1])/2",
+		"YCenter:="		, "-(height[0]+height[1]/2",
 		"ZCenter:="		, "air_gap/2",
 		"XStart:="		, "1/2*width[1]-width[0]*move[0]",
 		"YStart:="		, "-(height[0]+height[1])/2",
