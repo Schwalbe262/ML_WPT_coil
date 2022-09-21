@@ -3,10 +3,10 @@ ScriptEnv.Initialize("Ansoft.ElectronicsDesktop")
 oDesktop.RestoreWindow()
 
 # Open aedt file
-oDesktop.OpenProject("Y:/git/ML_WPT_coil/LRT/simple_model_turn22/script1/ML_aedt/ML1.aedt")
+oDesktop.OpenProject("Y:/git/ML_WPT_coil/LRT/simple_model_turn22/script15/ML_aedt/ML15.aedt")
 
 # Make project
-oProject = oDesktop.SetActiveProject("ML1")
+oProject = oDesktop.SetActiveProject("ML15")
 oProject.InsertDesign("Maxwell", "Maxwell_ML_v$VERSION_IDX_STR", "EddyCurrent", "")
 oDesign = oProject.SetActiveDesign("Maxwell_ML_v$VERSION_IDX_STR")
 
@@ -1483,6 +1483,6 @@ oModule.CreateReport("Calculator Expressions Table 1", "Fields", "Data Table", "
 		"Y Component:="		, ["Tx_loss","Rx_loss"]
 	])
 
-oModule.ExportToFile("L Table 1", "Y:/git/ML_WPT_coil/LRT/simple_model_turn22/script1/ML_data/inductance$VERSION_IDX_STR_dat.csv", False)
-oModule.ExportToFile("Coupling Coeff Table 1", "Y:/git/ML_WPT_coil/LRT/simple_model_turn22/script1/ML_data/coupling$VERSION_IDX_STR_dat.csv", False)
-oModule.ExportToFile("Calculator Expressions Table 1", "Y:/git/ML_WPT_coil/LRT/simple_model_turn22/script1/ML_data/loss$VERSION_IDX_STR_dat.csv", False)
+oModule.ExportToFile("L Table 1", "Y:/git/ML_WPT_coil/LRT/simple_model_turn22/script15/ML_data/inductance$VERSION_IDX_STR_dat.csv", False)
+oModule.ExportToFile("Coupling Coeff Table 1", "Y:/git/ML_WPT_coil/LRT/simple_model_turn22/script15/ML_data/coupling$VERSION_IDX_STR_dat.csv", False)
+oModule.ExportToFile("Calculator Expressions Table 1", "Y:/git/ML_WPT_coil/LRT/simple_model_turn22/script15/ML_data/loss$VERSION_IDX_STR_dat.csv", False)
