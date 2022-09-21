@@ -90,14 +90,14 @@ def run_simul(version_idx_str):
         "$gap1"  :  gap1,
         "$width0"  :  width0,
         "$width1"  :  width1,
-        "ferrite_thick0" : ferrite_thick0,
-        "ferrite_thick1" : ferrite_thick1,
-        "ferrite_height0" : ferrite_height0,
-        "ferrite_height1" : ferrite_height1,
-        "ferrite_ex0" : ferrite_ex0,
-        "ferrite_ex1" : ferrite_ex1,
-        "ferrite_margin0" : ferrite_margin0,
-        "ferrite_margin1" : ferrite_margin1,
+        "$ferrite_thick0" : ferrite_thick0,
+        "$ferrite_thick1" : ferrite_thick1,
+        "$ferrite_height0" : ferrite_height0,
+        "$ferrite_height1" : ferrite_height1,
+        "$ferrite_ex0" : ferrite_ex0,
+        "$ferrite_ex1" : ferrite_ex1,
+        "$ferrite_margin0" : ferrite_margin0,
+        "$ferrite_margin1" : ferrite_margin1,
     
         #FIXME : add some idt : variables
     }

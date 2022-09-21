@@ -308,11 +308,11 @@ oEditor = oDesign.SetActiveEditor("3D Modeler")
 oEditor.CreateBox(
 	[
 		"NAME:BoxParameters",
-		"XPosition:="		, "-width[0]/2-1.5*ter",
-		"YPosition:="		, "-height[0]/2-1.5*ter",
+		"XPosition:="		, "-(width[0]+width[1])/2",
+		"YPosition:="		, "-(height[0]+height[1])/2",
 		"ZPosition:="		, "-150mm-air_gap/2",
-		"XSize:="		, "width[0]+3*ter",
-		"YSize:="		, "height[0]+3*ter",
+		"XSize:="		, "(width[0]+width[1])",
+		"YSize:="		, "(height[0]+height[1])",
 		"ZSize:="		, "300mm+air_gap"
 	], 
 	[
@@ -1399,47 +1399,6 @@ oModule.AssignMatrix(
 			[
 				"NAME:MatrixEntry",
 				"Source:="		, "Rx"
-			]
-		]
-	])
-
-
-# off eddy effect
-
-oModule.SetEddyEffect(
-	[
-		"NAME:Eddy Effect Setting",
-		[
-			"NAME:EddyEffectVector",
-			[
-				"NAME:Data",
-				"Object Name:="		, "Tx1",
-				"Eddy Effect:="		, False,
-				"Displacement Current:=", False
-			],
-			[
-				"NAME:Data",
-				"Object Name:="		, "Rx1",
-				"Eddy Effect:="		, False,
-				"Displacement Current:=", False
-			],
-			[
-				"NAME:Data",
-				"Object Name:="		, "Air",
-				"Eddy Effect:="		, False,
-				"Displacement Current:=", False
-			],
-			[
-				"NAME:Data",
-				"Object Name:="		, "ferrite_tx",
-				"Eddy Effect:="		, False,
-				"Displacement Current:=", False
-			],
-			[
-				"NAME:Data",
-				"Object Name:="		, "ferrite_rx",
-				"Eddy Effect:="		, False,
-				"Displacement Current:=", False
 			]
 		]
 	])
