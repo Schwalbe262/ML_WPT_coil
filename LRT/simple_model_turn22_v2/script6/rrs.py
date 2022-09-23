@@ -67,14 +67,18 @@ def run_simul(version_idx_str):
     ferrite_margin0 = random_choice(ferrite_margin0_range) 
     ferrite_margin1 = random_choice(ferrite_margin1_range) 
 
-    width0_range = [round(2/10*(ferrite_margin0 + 2*gap0))*10, 500, 10, 0]
-    width1_range = [round(2/10*(ferrite_margin1 + 2*gap1))*10, 500, 10, 0]
+    if width0_range[0] < round(2.5/10*(ferrite_margin0 + 2*gap0))*10 :
+        width0_range = [round(2.5/10*(ferrite_margin0 + 2*gap0))*10, 500, 10, 0]
+    if width1_range[0] < round(2.5/10*(ferrite_margin1 + 2*gap1))*10 :
+        width1_range = [round(2.5/10*(ferrite_margin1 + 2*gap1))*10, 500, 10, 0]
 
     width0 = random_choice(width0_range)
     width1 = random_choice(width1_range)
 
-    height0_range = [round(2/10*(ferrite_margin0 + 2*gap0))*10, 500, 10, 0]
-    height1_range = [round(2/10*(ferrite_margin1 + 2*gap1))*10, 500, 10, 0]
+    if height0_range[0] < round(2.5/10*(ferrite_margin0 + 2*gap0))*10 :
+        height0_range = [round(2.5/10*(ferrite_margin0 + 2*gap0))*10, 4000, 10, 0]
+    if height0_range[1] < round(2.5/10*(ferrite_margin1 + 2*gap1))*10 :
+        height1_range = [round(2.5/10*(ferrite_margin1 + 2*gap1))*10, 4000, 10, 0]
 
     height0 = random_choice(height0_range)
     height1 = random_choice(height1_range)
