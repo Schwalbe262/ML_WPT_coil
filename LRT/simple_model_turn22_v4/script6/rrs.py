@@ -166,7 +166,7 @@ def run_simul(version_idx_str):
     temp3 = pd.read_csv(f'.\ML_data\loss{version_idx_str}_dat.csv', sep=",")
     temp3 = temp3.to_numpy()
 
-    parameter = np.array([width0,width1,height0,height1,gap0,gap1,ferrite_thick0,ferrite_thick1,ferrite_height0,ferrite_height1,ferrite_ex0,ferrite_ex1,ferrite_margin0,ferrite_margin1])
+    parameter = np.array([width0,width1,height0,height1,airgap,gap0,gap1,ferrite_thick0,ferrite_thick1,ferrite_height0,ferrite_height1,ferrite_ex0,ferrite_ex1,ferrite_margin0,ferrite_margin1])
 
     temp1 = np.append(parameter,temp1)
     temp2 = np.append(parameter,temp2)
