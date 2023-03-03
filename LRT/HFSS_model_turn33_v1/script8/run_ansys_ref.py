@@ -1064,9 +1064,9 @@ oEditor.CreateRegion(
 		"-XPaddingType:="	, "Percentage Offset",
 		"-XPadding:="		, "100",
 		"+YPaddingType:="	, "Percentage Offset",
-		"+YPadding:="		, "100",
+		"+YPadding:="		, "60",
 		"-YPaddingType:="	, "Percentage Offset",
-		"-YPadding:="		, "100",
+		"-YPadding:="		, "60",
 		"+ZPaddingType:="	, "Percentage Offset",
 		"+ZPadding:="		, "200",
 		"-ZPaddingType:="	, "Percentage Offset",
@@ -1143,7 +1143,7 @@ oModule.ExportToFile("Output Variables Table 1", "Y:/git/ML_WPT_coil/LRT/HFSS_mo
 
 
 results = []
-with open("inductance$VERSION_IDX_STR_dat.csv") as csvfile:
+with open("Y:/git/ML_WPT_coil/LRT/HFSS_model_turn33_v1/script8/ML_data/inductance$VERSION_IDX_STR_dat.csv") as csvfile:
 	reader = csv.reader(csvfile, quoting=csv.QUOTE_NONNUMERIC) # change contents to floats
 	for row in reader: # each row is a list
 		results.append(row)
