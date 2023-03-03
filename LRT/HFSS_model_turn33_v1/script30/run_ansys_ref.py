@@ -1143,7 +1143,7 @@ oModule.ExportToFile("Output Variables Table 1", "Y:/git/ML_WPT_coil/LRT/HFSS_mo
 
 
 results = []
-with open("result_inductance_temp.csv") as csvfile:
+with open("inductance$VERSION_IDX_STR_dat.csv") as csvfile:
 	reader = csv.reader(csvfile, quoting=csv.QUOTE_NONNUMERIC) # change contents to floats
 	for row in reader: # each row is a list
 		results.append(row)
