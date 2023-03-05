@@ -99,13 +99,13 @@ def run_simul(version_idx_str):
     if width_range[0] - 5*coil_width0 - 4*turn_width_gap0 > 2*coil_width0 :
         width0 = random_choice(width_range)
     else :
-        width_range_temp = [round(5*coil_width0 - 4*turn_width_gap0) + 2*coil_width0, width_range[1], width_range[2], width_range[3]]
+        width_range_temp = [round(5*coil_width0 + 4*turn_width_gap0) + 2*coil_width0, width_range[1], width_range[2], width_range[3]]
         width0 = random_choice(width_range_temp)
 
     if width_range[0] - 5*coil_width1 - 4*turn_width_gap1 > 2*coil_width1 :
         width1 = random_choice(width_range)
     else :
-        width_range_temp = [round(5*coil_width1 - 4*turn_width_gap1) + 2*coil_width1, width_range[1], width_range[2], width_range[3]]
+        width_range_temp = [round(5*coil_width1 + 4*turn_width_gap1) + 2*coil_width1, width_range[1], width_range[2], width_range[3]]
         width1 = random_choice(width_range_temp)
 
     
