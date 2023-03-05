@@ -191,8 +191,8 @@ def run_simul(version_idx_str):
 
 
     parameter = np.array([Itx, Irx, air_gap, coil_width0, coil_width1, length0, length1, width0, width1, coil_offset0, coil_offset1, turn_length_gap0, turn_length_gap1, + \
-                          ferrite_thick0, ferrite_thick1, ferrite_length_margin0, ferrite_length_margin1, ferrite_width_margin0, ferrite_width_margin1, + \
-                            ferrite_side_height0, ferrite_side_height1, ferrite_side_thick0, ferrite_side_thick1])
+                          turn_width_gap0, turn_width_gap1, ferrite_thick0, ferrite_thick1, ferrite_length_margin0, ferrite_length_margin1, ferrite_width_margin0, ferrite_width_margin1, + \
+                            ferrite_side_height0, ferrite_side_height1, ferrite_side_thick0, ferrite_side_thick1]) # 25 parameter
     
     #temp = np.append(parameter,temp1[0][1])
     #temp = np.append(temp,temp1[0][2])
