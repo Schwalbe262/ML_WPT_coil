@@ -940,7 +940,7 @@ oEditor.CreatePolyline(
 			"NAME:PolylineXSection",
 			"XSectionType:="	, "Circle",
 			"XSectionOrient:="	, "Auto",
-			"XSectionWidth:="	, "coil_width[0]",
+			"XSectionWidth:="	, "coil_width[1]",
 			"XSectionTopWidth:="	, "0mm",
 			"XSectionlength:="	, "0mm",
 			"XSectionNumSegments:="	, "Num",
