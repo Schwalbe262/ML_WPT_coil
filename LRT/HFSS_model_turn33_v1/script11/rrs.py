@@ -72,7 +72,7 @@ def run_simul(version_idx_str):
     ferrite_width_margin0 = random_choice(ferrite_width_margin_range)
     ferrite_width_margin1 = random_choice(ferrite_width_margin_range)
 
-    ferrite_side_height0 = random_choice(ferrite_side_height_range)
+    
     ferrite_side_height1 = random_choice(ferrite_side_height_range)
 
     ferrite_side_thick0 = random_choice(ferrite_side_thick_range)
@@ -87,7 +87,7 @@ def run_simul(version_idx_str):
         width_range_temp = [round(5*coil_width0 - 4*turn_width_gap0) + 2*coil_width0, width_range[1], width_range[2], width_range[3]]
         width0 = random_choice(width_range_temp)
 
-    if width_range[1] - 5*coil_width1 - 4*turn_width_gap1 > 2*coil_width1 :
+    if width_range[0] - 5*coil_width1 - 4*turn_width_gap1 > 2*coil_width1 :
         width1 = random_choice(width_range)
     else :
         width_range_temp = [round(5*coil_width1 - 4*turn_width_gap1) + 2*coil_width1, width_range[1], width_range[2], width_range[3]]
@@ -100,10 +100,20 @@ def run_simul(version_idx_str):
         air_gap_range = [10*(coil_offset0 + coil_offset1 + 2.5*(coil_width0 + coil_width1) + 5 - ferrite_side_height0 - ferrite_side_height1)/10, air_gap_range[1], air_gap_range[2], air_gap_range[3]]
         air_gap = random_choice(air_gap_range)
 
-    
+
+    if ferrite_side_height_range[0] > coil_width0 + coil_offset0 :
+        ferrite_side_height0 = random_choice(ferrite_side_height_range)
+    else :
+        ferrite_side_height_range_temp = [coil_width0 + coil_offset0, 100, 1, 0]
+        ferrite_side_height0 = random_choice(ferrite_side_height_range_temp)
+
+    if ferrite_side_height_range[0] > coil_width1 + coil_offset1 :
+        ferrite_side_height1 = random_choice(ferrite_side_height_range)
+    else :
+        ferrite_side_height_range_temp = [coil_width0 + coil_offset1, 100, 1, 0]
+        ferrite_side_height1 = random_choice(ferrite_side_height_range_temp)
 
     
-
     
 
 
