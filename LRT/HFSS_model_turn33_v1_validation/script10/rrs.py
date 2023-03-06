@@ -34,7 +34,7 @@ def run_simul(version_idx_str):
     Num = version_idx_str
     Itx = raw_data["Itx"].values[0]
     Irx = raw_data["Irx"].values[0]
-    air_gap = raw_data["ari_gap"].values[0]
+    air_gap = raw_data["air_gap"].values[0]
     coil_width0 = raw_data["coil_width0"].values[0]
     coil_width1 = raw_data["coil_width1"].values[0]
     length0 = raw_data["length0"].values[0]
@@ -165,7 +165,7 @@ def run_simul(version_idx_str):
 
 
 
-for i in range(0, 10): 
+for i in range(0, 101): 
 
     #run_simul(i)
     #print("end")
