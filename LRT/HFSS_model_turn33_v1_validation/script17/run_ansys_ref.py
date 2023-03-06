@@ -1139,7 +1139,7 @@ oModule.CreateReport("Output Variables Table 1", "Terminal Solution Data", "Data
 		"Y Component:="		, ["Ltx","Lrx","k"]
 	])
 
-oModule.ExportToFile("Output Variables Table 1", "Y:/git/ML_WPT_coil/LRT/HFSS_model_turn33_v1/script17/ML_data/inductance$VERSION_IDX_STR_dat.csv", False)
+oModule.ExportToFile("Output Variables Table 1", "Y:/git/ML_WPT_coil/LRT/HFSS_model_turn33_v1_validation/script17/ML_data/inductance$VERSION_IDX_STR_dat.csv", False)
 
 
 results = []
@@ -1206,4 +1206,4 @@ oModule.CreateReport("Calculator Expressions Table 1", "Fields", "Data Table", "
 
 
 oModule = oDesign.GetModule("ReportSetup")
-oModule.ExportToFile("Calculator Expressions Table 1", "Y:/git/ML_WPT_coil/LRT/HFSS_model_turn33_v1/script17/ML_data/loss$VERSION_IDX_STR_dat.csv", False)
+oModule.ExportToFile("Calculator Expressions Table 1", "Y:/git/ML_WPT_coil/LRT/HFSS_model_turn33_v1_validation/script17/ML_data/loss$VERSION_IDX_STR_dat.csv", False)
