@@ -6,7 +6,7 @@ ScriptEnv.Initialize("Ansoft.ElectronicsDesktop")
 oDesktop.RestoreWindow()
 
 # Open aedt file
-oDesktop.OpenProject("Y:/git/ML_WPT_coil/LRT/HFSS_model_turn33_v1/script10/ML_aedt/ML10.aedt")
+oDesktop.OpenProject("Y:/git/ML_WPT_coil/LRT/HFSS_model_turn33_v1_validation/script10/ML_aedt/ML10.aedt")
 
 # Make project
 oProject = oDesktop.SetActiveProject("ML10")
