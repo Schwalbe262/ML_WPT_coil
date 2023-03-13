@@ -6,10 +6,10 @@ ScriptEnv.Initialize("Ansoft.ElectronicsDesktop")
 oDesktop.RestoreWindow()
 
 # Open aedt file
-oDesktop.OpenProject("Y:/git/ML_WPT_coil/LRT/HFSS_model_turn33_v2/script1/ML_aedt/ML1.aedt")
+oDesktop.OpenProject("Y:/git/ML_WPT_coil/LRT/HFSS_model_turn33_v2/script23/ML_aedt/ML23.aedt")
 
 # Make project
-oProject = oDesktop.SetActiveProject("ML1")
+oProject = oDesktop.SetActiveProject("ML23")
 oProject.InsertDesign("HFSS", "HFSS_ML_v$VERSION_IDX_STR", "DrivenTerminal", "") # check "HFSS_ML_v$VERSION_IDX_STR"
 oDesign = oProject.SetActiveDesign("HFSS_ML_v$VERSION_IDX_STR") # check "HFSS_ML_v$VERSION_IDX_STR"
 
@@ -1139,7 +1139,7 @@ oModule.CreateReport("Output Variables Table 1", "Terminal Solution Data", "Data
 		"Y Component:="		, ["Ltx","Lrx","k"]
 	])
 
-oModule.ExportToFile("Output Variables Table 1", "Y:/git/ML_WPT_coil/LRT/2/script1/ML_data/inductance$VERSION_IDX_STR_dat.csv", False)
+oModule.ExportToFile("Output Variables Table 1", "Y:/git/ML_WPT_coil/LRT/2/script23/ML_data/inductance$VERSION_IDX_STR_dat.csv", False)
 
 
 results = []
@@ -1206,4 +1206,4 @@ oModule.CreateReport("Calculator Expressions Table 1", "Fields", "Data Table", "
 
 
 oModule = oDesign.GetModule("ReportSetup")
-oModule.ExportToFile("Calculator Expressions Table 1", "Y:/git/ML_WPT_coil/LRT/HFSS_model_turn33_v2/script1/ML_data/loss$VERSION_IDX_STR_dat.csv", False)
+oModule.ExportToFile("Calculator Expressions Table 1", "Y:/git/ML_WPT_coil/LRT/HFSS_model_turn33_v2/script23/ML_data/loss$VERSION_IDX_STR_dat.csv", False)

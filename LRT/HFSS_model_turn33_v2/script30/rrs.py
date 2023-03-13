@@ -219,9 +219,9 @@ def run_simul(version_idx_str):
     print(temp)
 
 
-    data1 = np.loadtxt(f'Z:\\Autosimul_data\\LRT\HFSS_model_turn33_v2\\{COMPUTER_NAME}\\script1\\result_data.csv', delimiter=",")
+    data1 = np.loadtxt(f'Z:\\Autosimul_data\\LRT\HFSS_model_turn33_v2\\{COMPUTER_NAME}\\script30\\result_data.csv', delimiter=",")
     new_data1 = np.vstack((data1, temp))
-    np.savetxt(f'Z:\\Autosimul_data\\LRT\\HFSS_model_turn33_v2\\{COMPUTER_NAME}\\script1\\result_data.csv',new_data1,delimiter=",")
+    np.savetxt(f'Z:\\Autosimul_data\\LRT\\HFSS_model_turn33_v2\\{COMPUTER_NAME}\\script30\\result_data.csv',new_data1,delimiter=",")
     #np.savetxt(f'temp.csv',[temp],delimiter=",")
 
 
@@ -236,14 +236,14 @@ for i in range(0, 10000):
 
     try :
         try:
-            os.remove(f'.\ML_aedt\ML1.aedt.lock')
+            os.remove(f'.\ML_aedt\ML30.aedt.lock')
         except:
             time.sleep(1)
-        if os.path.isfile(f'.\ML_aedt\ML1.aedt') :
-            os.remove(f'.\ML_aedt\ML1.aedt')
+        if os.path.isfile(f'.\ML_aedt\ML30.aedt') :
+            os.remove(f'.\ML_aedt\ML30.aedt')
         time.sleep(1)	
 
-        shutil.copy(f'.\ML_aedt\ML_ref.aedt',f'.\ML_aedt\ML1.aedt')
+        shutil.copy(f'.\ML_aedt\ML_ref.aedt',f'.\ML_aedt\ML30.aedt')
         time.sleep(1)
 
         try:
@@ -252,13 +252,13 @@ for i in range(0, 10000):
             print(f'error number {i}')
             print(e)
 
-        if os.path.isfile(f'.\ML_aedt\ML1.aedt') :
-            os.remove(f'.\ML_aedt\ML1.aedt')
+        if os.path.isfile(f'.\ML_aedt\ML30.aedt') :
+            os.remove(f'.\ML_aedt\ML30.aedt')
         time.sleep(1)	
 
-        shutil.rmtree(f'.\ML_aedt\ML1.aedtresults')
+        shutil.rmtree(f'.\ML_aedt\ML30.aedtresults')
         try:
-            os.remove(f'.\ML_aedt\ML1.aedt.lock')
+            os.remove(f'.\ML_aedt\ML30.aedt.lock')
         except:
             time.sleep(1)
     except :
