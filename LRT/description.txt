@@ -1,0 +1,2 @@
+HFSS_model_turn33_v1 : 무선급전 설계용 3/3턴 추정 모델 adaptive pass 6까지 (ICPE 논문용)
+HFSS_model_turn33_v2 : 무선급전 설계용 3/3턴 추정 모델 adaptive pass 10까지 (ICPE 논문용)
