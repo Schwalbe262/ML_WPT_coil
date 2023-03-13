@@ -28,7 +28,7 @@ def run_simul(version_idx_str):
     #0 Initialize random variables
 
     coil_width_range = [10, 40, 0.1, 1]
-    length_range = [1000, 5000, 1, 0]
+    length_range = [800, 5000, 1, 0]
     width_range = [250, 800, 1, 0]
     coil_offset_range = [1, 30, 0.1, 1]
     turn_length_gap_range = [5, 100, 1, 0]

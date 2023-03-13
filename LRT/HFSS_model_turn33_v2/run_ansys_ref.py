@@ -6,7 +6,7 @@ ScriptEnv.Initialize("Ansoft.ElectronicsDesktop")
 oDesktop.RestoreWindow()
 
 # Open aedt file
-oDesktop.OpenProject("Y:/git/ML_WPT_coil/LRT/HFSS_model_turn33_v1/script1/ML_aedt/ML1.aedt")
+oDesktop.OpenProject("Y:/git/ML_WPT_coil/LRT/HFSS_model_turn33_v2/script1/ML_aedt/ML1.aedt")
 
 # Make project
 oProject = oDesktop.SetActiveProject("ML1")
@@ -21,8 +21,8 @@ oModule.InsertSetup("HfssDriven",
 		"SolveType:="		, "Single",
 		"Frequency:="		, "60kHz",
 		"MaxDeltaE:="		, 0.001,
-		"MaximumPasses:="	, 6, # check 6
-		"MinimumPasses:="	, 6, # check 6
+		"MaximumPasses:="	, 9, # check 6
+		"MinimumPasses:="	, 9, # check 6
 		"MinimumConvergedPasses:=", 1,
 		"PercentRefinement:="	, 30,
 		"IsEnabled:="		, True,
@@ -1139,7 +1139,7 @@ oModule.CreateReport("Output Variables Table 1", "Terminal Solution Data", "Data
 		"Y Component:="		, ["Ltx","Lrx","k"]
 	])
 
-oModule.ExportToFile("Output Variables Table 1", "Y:/git/ML_WPT_coil/LRT/HFSS_model_turn33_v1/script1/ML_data/inductance$VERSION_IDX_STR_dat.csv", False)
+oModule.ExportToFile("Output Variables Table 1", "Y:/git/ML_WPT_coil/LRT/HFSS_model_turn33_v2/script1/ML_data/inductance$VERSION_IDX_STR_dat.csv", False)
 
 
 results = []
@@ -1206,4 +1206,4 @@ oModule.CreateReport("Calculator Expressions Table 1", "Fields", "Data Table", "
 
 
 oModule = oDesign.GetModule("ReportSetup")
-oModule.ExportToFile("Calculator Expressions Table 1", "Y:/git/ML_WPT_coil/LRT/HFSS_model_turn33_v1/script1/ML_data/loss$VERSION_IDX_STR_dat.csv", False)
+oModule.ExportToFile("Calculator Expressions Table 1", "Y:/git/ML_WPT_coil/LRT/HFSS_model_turn33_v2/script1/ML_data/loss$VERSION_IDX_STR_dat.csv", False)
