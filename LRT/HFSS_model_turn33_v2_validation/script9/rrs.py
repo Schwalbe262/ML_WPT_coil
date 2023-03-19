@@ -166,7 +166,7 @@ def run_simul(version_idx_str):
 
 
 
-for i in range(0, 101): 
+for i in range(80, 90): 
 
     #run_simul(i)
     #print("end")
